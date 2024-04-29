@@ -36,9 +36,7 @@ export default function FF() {
         style={{ padding: "20px", backgroundColor: "tomato" }}
         onClick={() => {
           window.open(
-            `intent://${encodeURIComponent(
-              "https://xclusive.market"
-            )}#Intent;scheme=http;package=com.android.chrome;end`
+            `intent://xclusive.market#Intent;scheme=http;package=com.android.chrome;end`
           );
         }}
       >
@@ -48,7 +46,7 @@ export default function FF() {
       <button
         style={{ padding: "20px", backgroundColor: "tomato" }}
         onClick={() => {
-          window.open(`googlechrome:////xclusive.market}`);
+          window.open(`googlechrome:////xclusive.market`);
         }}
       >
         click me!! ( ios browser- chrome) {"https://xclusive.market"}
