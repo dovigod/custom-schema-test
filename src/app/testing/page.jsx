@@ -1,8 +1,6 @@
 "use client";
 export default function FF() {
-  const androidChromeMarketPlace = encodeURIComponent(
-    "market://details?id=com.android.chrome"
-  );
+  const androidChromeMarketPlace = "market://details?id=com.android.chrome";
 
   const androidFallback = `intent://xclusive.market#Intent;scheme=http;package=com.android.chrome;S.browser_fallback_url=${androidChromeMarketPlace};end`;
 
