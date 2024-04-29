@@ -59,7 +59,8 @@ export default function FF() {
         style={{ padding: "20px", backgroundColor: "tomato" }}
         onClick={() => {
           window.open(
-            `x-web-search://?${encodeURIComponent("xclusive.market")}`
+            // `x-web-search://?${encodeURIComponent("xclusive.market")}`
+            `x-safari-https://xclusive.market`
           );
         }}
       >
