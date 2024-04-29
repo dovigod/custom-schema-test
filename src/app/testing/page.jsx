@@ -5,7 +5,7 @@ export default function FF() {
 
   const androidFallback = `intent://xclusive.market#Intent;scheme=http;package=com.android.chrome;S.browser_fallback_url=${androidChromeMarketPlace};end`;
 
-  const origin = +`xclusive.market/ko`;
+  const origin = `xclusive.market/ko`;
   const scheme = "https://";
   // const androidChromeMarketPlace = encodeURIComponent("market://details?id=com.android.chrome");
   const lineFallback = `${
