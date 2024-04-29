@@ -5,6 +5,15 @@ export default function FF() {
 
   const androidFallback = `intent://xclusive.market#Intent;scheme=http;package=com.android.chrome;S.browser_fallback_url=${androidChromeMarketPlace};end`;
 
+  const origin = +`xclusive.market/${language}`;
+  const scheme = "https://";
+  // const androidChromeMarketPlace = encodeURIComponent("market://details?id=com.android.chrome");
+  const lineFallback = `${
+    scheme + encodeURIComponent(origin)
+  }/?openExternalBrowser=1`;
+  const kakaoFallback = `kakaotalk://web/openExternal?url=${
+    scheme + encodeURIComponent(origin)
+  }`;
   return (
     <>
       <div
@@ -18,7 +27,7 @@ export default function FF() {
       <button
         style={{ padding: "20px", backgroundColor: "tomato" }}
         onClick={() => {
-          window.open("https://xclusive.market/?openExternalBrowser=1");
+          window.open(lineFallback);
         }}
       >
         click me!! ( ios + android , line)
@@ -27,11 +36,7 @@ export default function FF() {
       <button
         style={{ padding: "20px", backgroundColor: "tomato" }}
         onClick={() => {
-          window.open(
-            `kakaotalk://web/openExternal?url=${encodeURIComponent(
-              "https://xclusive.market"
-            )}`
-          );
+          window.open(kakaoFallback);
         }}
       >
         click me!! ( ios + android , kakao)
