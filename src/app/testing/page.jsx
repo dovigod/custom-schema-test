@@ -1,10 +1,10 @@
 "use client";
 export default function FF() {
-  const androidChromeMarketPlace = "market://details?id=com.android.chrome";
+  const androidChromeMarketPlace =
+    "https://play.google.com/store/apps/details?id=com.android.chrome";
 
   const androidFallback = `intent://xclusive.market#Intent;scheme=http;package=com.android.chrome;S.browser_fallback_url=${androidChromeMarketPlace};end`;
 
-  const x = "googlechrome://navigate?=xclusive.market";
   return (
     <>
       <div
@@ -40,7 +40,7 @@ export default function FF() {
       <button
         style={{ padding: "20px", backgroundColor: "tomato" }}
         onClick={() => {
-          window.open(x);
+          window.open(androidFallback);
         }}
       >
         click me!! ( android default browser- chrome)
