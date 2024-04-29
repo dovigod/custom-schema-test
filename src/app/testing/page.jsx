@@ -27,7 +27,6 @@ export default function FF() {
       <button
         style={{ padding: "20px", backgroundColor: "tomato" }}
         onClick={() => {
-          alert(lineFallback);
           window.open(lineFallback);
         }}
       >
