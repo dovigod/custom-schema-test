@@ -4,6 +4,7 @@ export default function FF() {
 
   const androidFallback = `intent://xclusive.market#Intent;scheme=http;package=com.android.chrome;S.browser_fallback_url=${androidChromeMarketPlace};end`;
 
+  const x = "googlechrome://navigate?=xclusive.market";
   return (
     <>
       <div
@@ -39,7 +40,7 @@ export default function FF() {
       <button
         style={{ padding: "20px", backgroundColor: "tomato" }}
         onClick={() => {
-          window.open(androidFallback);
+          window.open(x);
         }}
       >
         click me!! ( android default browser- chrome)
