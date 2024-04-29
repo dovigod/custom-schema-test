@@ -48,9 +48,7 @@ export default function FF() {
       <button
         style={{ padding: "20px", backgroundColor: "tomato" }}
         onClick={() => {
-          window.open(
-            `googlechrome://${encodeURIComponent("https://xclusive.market")}`
-          );
+          window.open(`googlechrome:////xclusive.market}`);
         }}
       >
         click me!! ( ios browser- chrome) {"https://xclusive.market"}
