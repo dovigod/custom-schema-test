@@ -58,6 +58,9 @@ export default function FF() {
       <button
         style={{ padding: "20px", backgroundColor: "tomato" }}
         onClick={() => {
+          setTimeout(() => {
+            alert("hello world");
+          }, 4000);
           window.open(
             // `x-web-search://?${encodeURIComponent("xclusive.market")}`
             `x-safari-https://xclusive.market`
