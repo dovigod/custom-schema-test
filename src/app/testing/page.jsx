@@ -53,7 +53,7 @@ export default function FF() {
           );
         }}
       >
-        click me!! ( ios browser- chrome)
+        click me!! ( ios browser- chrome) {"https://xclusive.market"}
       </button>
 
       <button
