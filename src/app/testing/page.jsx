@@ -8,9 +8,7 @@ export default function FF() {
   const origin = `xclusive.market/ko`;
   const scheme = "https://";
   // const androidChromeMarketPlace = encodeURIComponent("market://details?id=com.android.chrome");
-  const lineFallback = `${
-    scheme + encodeURIComponent(origin)
-  }/?openExternalBrowser=1`;
+  const lineFallback = `${encodeURIComponent(origin)}/?openExternalBrowser=1`;
   const kakaoFallback = `kakaotalk://web/openExternal?url=${
     scheme + encodeURIComponent(origin)
   }`;
